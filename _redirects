@@ -1,0 +1,10 @@
+# Redirect non-www to www
+http://ofek-sweets.co.il/* https://www.ofek-sweets.co.il/:splat 301!
+https://ofek-sweets.co.il/* https://www.ofek-sweets.co.il/:splat 301!
+
+# Redirect Netlify subdomain to custom domain
+https://ofek-sweets.netlify.app/* https://www.ofek-sweets.co.il/:splat 301!
+http://ofek-sweets.netlify.app/* https://www.ofek-sweets.co.il/:splat 301!
+
+# SPA fallback (if needed in the future)
+/* /index.html 200
