@@ -1,29 +1,10 @@
-# Netlify configuration for ofek-sweets.co.il
+# Netlify configuration for ofek-sweets.co.il - Fixed version
 
 [build]
   publish = "."
   
 [build.environment]
   NODE_VERSION = "18"
-
-# Redirect rules
-[[redirects]]
-  from = "http://ofek-sweets.co.il/*"
-  to = "https://www.ofek-sweets.co.il/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://ofek-sweets.co.il/*"
-  to = "https://www.ofek-sweets.co.il/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://ofek-sweets.netlify.app/*"
-  to = "https://www.ofek-sweets.co.il/:splat"
-  status = 301
-  force = true
 
 # Headers for security and performance
 [[headers]]
