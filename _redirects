@@ -1,3 +1,2 @@
-# Netlify redirects - Fixed version
-# SPA fallback
-/* /index.html 200
+# Redirects for ofek-sweets.co.il (multi-page site)
+# Netlify serves 404.html automatically for missing pages.

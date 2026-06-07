@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="32" fill="#FBF6F0"/>
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#C9A96A" stroke-width="1.5"/>
+  <!-- עוגת קומות -->
+  <rect x="20" y="34" width="24" height="14" rx="2.5" fill="#A14651"/>
+  <rect x="24" y="22" width="16" height="12" rx="2.5" fill="#8A3742"/>
+  <!-- זילוף -->
+  <path d="M20 36c2 0 2 2.4 4 2.4s2-2.4 4-2.4 2 2.4 4 2.4 2-2.4 4-2.4 2 2.4 4 2.4 2-2.4 4-2.4v-2H20z" fill="#F7E8E4"/>
+  <path d="M24 24c1.6 0 1.6 2 3.2 2s1.6-2 3.2-2 1.6 2 3.2 2 1.6-2 3.2-2 1.6 2 3.2 2v-2H24z" fill="#F7E8E4"/>
+  <!-- נר -->
+  <rect x="30.8" y="13" width="2.4" height="9" rx="1.2" fill="#C9A96A"/>
+  <ellipse cx="32" cy="11" rx="2" ry="2.8" fill="#E8B14C"/>
+  <!-- צלחת -->
+  <rect x="16" y="48" width="32" height="3" rx="1.5" fill="#C9A96A"/>
+</svg>
