@@ -255,6 +255,58 @@
         </section>
 
         <!-- ===== CTA ===== -->
+        <!-- ===== טופס יצירת קשר · Netlify Forms ===== -->
+        <section class="section alt" id="contact-form" aria-labelledby="cf-title">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">השאירו פרטים ואופק תחזור אליכם</span>
+                    <h2 id="cf-title">בקשת הצעת מחיר / יצירת קשר</h2>
+                    <p>מלאו את הטופס הקצר ונחזור אליכם בהקדם עם הצעה אישית. מעדיפים וואטסאפ? גם זה מצוין.</p>
+                </div>
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="contact-form">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="form-hp">
+                        <label>אל תמלאו שדה זה אם אתם אנושיים: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+                    </p>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="cf-name">שם מלא <span class="req" aria-hidden="true">*</span></label>
+                            <input type="text" id="cf-name" name="שם מלא" required autocomplete="name">
+                        </div>
+                        <div class="form-field">
+                            <label for="cf-phone">טלפון <span class="req" aria-hidden="true">*</span></label>
+                            <input type="tel" id="cf-phone" name="טלפון" required autocomplete="tel" inputmode="tel">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="cf-event">סוג האירוע</label>
+                            <select id="cf-event" name="סוג האירוע">
+                                <option value="">בחרו אירוע…</option>
+                                <option>יום הולדת</option>
+                                <option>בר / בת מצווה</option>
+                                <option>ברית / בריתה</option>
+                                <option>אירוסין / חתונה</option>
+                                <option>שולחן קינוחים לאירוע</option>
+                                <option>אחר</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="cf-date">תאריך האירוע</label>
+                            <input type="date" id="cf-date" name="תאריך האירוע">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="cf-msg">מה תרצו להזמין? <span class="req" aria-hidden="true">*</span></label>
+                        <textarea id="cf-msg" name="הודעה" required placeholder="ספרו לנו על העוגה או הקינוחים שחלמתם עליהם — סגנון, צבעים, מספר סועדים וכל פרט שיעזור לנו להתאים לכם הצעה."></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary">שליחת הפנייה</button>
+                    </div>
+                    <p class="form-note">הפרטים נשלחים ישירות לאופק ולא מוצגים באתר. אפשר גם בוואטסאפ: 052-328-5727.</p>
+                </form>
+            </div>
+        </section>
         <section class="cta-band">
             <h2>יש לכם תאריך? בואו נתחיל לתכנן את העוגה</h2>
             <p>הזמנות מתקבלות בתיאום מראש — מומלץ לשריין מקום מוקדם, במיוחד לסופי שבוע ואירועים.</p>

@@ -306,6 +306,30 @@ a:focus-visible, button:focus-visible {
 .wa-float:hover { background: #14613B; color: #fff; transform: scale(1.06); }
 .wa-float svg { width: 30px; height: 30px; fill: #fff; }
 
+/* ===== טופס יצירת קשר (Netlify) ===== */
+.contact-form { max-width: 46rem; margin: 0 auto; text-align: start; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+.form-field { margin-bottom: 1rem; }
+.form-field label { display: block; font-weight: 700; margin-bottom: 0.35rem; color: var(--ink); }
+.form-field label .req { color: var(--rose-dark); }
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%; padding: 0.75rem 0.9rem; border: 1.5px solid var(--line);
+  border-radius: 12px; background: #fff; font-family: var(--font-body);
+  font-size: 1.02rem; color: var(--ink);
+}
+.form-field textarea { min-height: 120px; resize: vertical; }
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: 3px solid var(--gold); outline-offset: 1px; border-color: var(--gold);
+}
+.form-hp { position: absolute; left: -9999px; top: -9999px; visibility: hidden; }
+.form-submit { text-align: center; margin-top: 1.2rem; }
+.form-note { text-align: center; color: var(--muted); font-size: 0.9rem; margin-top: 0.8rem; }
+
 /* ===== פירורי לחם ===== */
 .breadcrumbs { padding: 1rem 0 0; font-size: 0.92rem; color: var(--muted); }
 .breadcrumbs ol { list-style: none; display: flex; gap: 0.4rem; flex-wrap: wrap; }
